@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Vehicle Request Results</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Custom Vehicle Request Results</h1>
+        
+        <h3>Basic Information</h3>
+        <ul>
+            <li><strong>Name:</strong> <%= formData.name %></li>
+            <li><strong>Email:</strong> <%= formData.email %></li>
+            <li><strong>Phone:</strong> <%= formData.phone %></li>
+        </ul>
+
+        <h3>Audio System</h3>
+        <ul>
+            <li><strong>Amplifier:</strong> <%= formData.audio_system.amp %></li>
+            <li><strong>Amplifier Size/Placement:</strong> <%= formData.audio_system.amp_size %></li>
+        </ul>
+
+        <h3>Body Information</h3>
+        <ul>
+            <li><strong>Bumpers:</strong> <%= formData.body.bumpers %></li>
+            <li><strong>Doors:</strong> <%= formData.body.doors %></li>
+            <li><strong>Fenders:</strong> <%= formData.body.fenders %></li>
+            <li><strong>Quarters:</strong> <%= formData.body.quarters %></li>
+        </ul>
+
+        <h3>Chassis Information</h3>
+        <ul>
+            <li><strong>Brakes:</strong> <%= formData.chassis.brakes %></li>
+            <li><strong>Brake System:</strong> <%= formData.chassis.brake_system %></li>
+            <li><strong>Chassis:</strong> <%= formData.chassis.chassis %></li>
+            <li><strong>Lower Control Arm:</strong> <%= formData.chassis.lower_control_arm %></li>
+            <li><strong>Steering:</strong> <%= formData.chassis.steering %></li>
+            <li><strong>Suspension:</strong> <%= formData.chassis.suspension %></li>
+            <li><strong>Upper Control Arm:</strong> <%= formData.chassis.upper_control_arm %></li>
+        </ul>
+
+        <h3>Exterior Information</h3>
+        <ul>
+            <li><strong>Engine Bay:</strong> <%= formData.exterior.engine_bay %></li>
+            <li><strong>Hood:</strong> <%= formData.exterior.hood %></li>
+            <li><strong>Top:</strong> <%= formData.exterior.top %></li>
+            <li><strong>Trunk Lid:</strong> <%= formData.exterior.trunk_lid %></li>
+            <li><strong>Trunk Pan:</strong> <%= formData.exterior.trunk_pan %></li>
+            <li><strong>Tub:</strong> <%= formData.exterior.tub %></li>
+        </ul>
+
+        <h3>Glass Information</h3>
+        <ul>
+            <li><strong>Rear Glass:</strong> <%= formData.glass.rear_glass %></li>
+            <li><strong>Windows:</strong> <%= formData.glass.windows %></li>
+            <li><strong>Windshield:</strong> <%= formData.glass.windshield %></li>
+        </ul>
+
+        <h3>Interior Information</h3>
+        <ul>
+            <li><strong>Air/Heat:</strong> <%= formData.interior.air_heat %></li>
+            <li><strong>Carpet:</strong> <%= formData.interior.carpet %></li>
+            <li><strong>Console:</strong> <%= formData.interior.console %></li>
+            <li><strong>Dash/Tacs/Meters:</strong> <%= formData.interior.dash_tacs %></li>
+            <li><strong>Door Panels:</strong> <%= formData.interior.door_panels %></li>
+            <li><strong>Glove Box:</strong> <%= formData.interior.glove_box %></li>
+            <li><strong>Interior:</strong> <%= formData.interior.interior %></li>
+            <li><strong>Power Locks:</strong> <%= formData.interior.power_locks %></li>
+            <li><strong>Power Window:</strong> <%= formData.interior.power_window %></li>
+            <li><strong>Roof:</strong> <%= formData.interior.roof %></li>
+            <li><strong>Seats:</strong> <%= formData.interior.seats %></li>
+            <li><strong>Steering Wheel:</strong> <%= formData.interior.steering_wheel %></li>
+        </ul>
+
+        <h3>Paint Information</h3>
+        <ul>
+            <li><strong>Paint Color:</strong> <%= formData.paint.paint_color %></li>
+            <li><strong>Paint Finish:</strong> <%= formData.paint.paint_finish %></li>
+            <li><strong>Paint Type:</strong> <%= formData.paint.paint_type %></li>
+        </ul>
+
+        <h3>Transmission Information</h3>
+        <ul>
+            <li><strong>Transmission:</strong> <%= formData.transmission.transmission %></li>
+            <li><strong>Manual/Automatic:</strong> <%= formData.transmission.transmission_type %></li>
+        </ul>
+
+        <h3>Vehicle Information</h3>
+        <ul>
+            <li><strong>Boost:</strong> <%= formData.vehicle.boost %></li>
+            <li><strong>Engine:</strong> <%= formData.vehicle.engine %></li>
+            <li><strong>Make:</strong> <%= formData.vehicle.make %></li>
+            <li><strong>Model:</strong> <%= formData.vehicle.model %></li>
+            <li><strong>Posi:</strong> <%= formData.vehicle.posi %></li>
+            <li><strong>Rear Differential:</strong> <%= formData.vehicle.rear_diff %></li>
+            <li><strong>AWD/4x4:</strong> <%= formData.vehicle.awd_4x4 %></li>
+            <li><strong>Key/Push Button/Start Option:</strong> <%= formData.vehicle.start_option %></li>
+            <li><strong>Specific/Type/Badge:</strong> <%= formData.vehicle.type_badge %></li>
+            <li><strong>Year:</strong> <%= formData.vehicle.year %></li>
+        </ul>
+
+        <h3>Wheels and Tires</h3>
+        <ul>
+            <li><strong>Tire Size:</strong> <%= formData.wheels.tire_size %></li>
+            <li><strong>Wheel Brand:</strong> <%= formData.wheels.wheel_brand %></li>
+            <li><strong>Wheel Offset:</strong> <%= formData.wheels.wheel_offset %></li>
+            <li><strong>Wheel Stagger:</strong> <%= formData.wheels.wheel_stagger %></li>
+            <li><strong>Wheel Type:</strong> <%= formData.wheels.wheel_type %></li>
+            <li><strong>Wheel Size:</strong> <%= formData.wheels.wheels_size %></li>
+        </ul>
+    </div>
+
+    <!-- Bootstrap JS (Optional for some components) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
