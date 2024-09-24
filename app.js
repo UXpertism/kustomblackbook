@@ -291,10 +291,9 @@ app.post('/results', async (req, res) => {
     `;
     
 
-        // Send the formatted email to 'tchadb@gmail.com'
         const mailOptions = {
             from: 'support@xtud.io',
-            to: 'tchadb@gmail.com', // Automatically send to this email
+            to: 'amani39er@gmail.com', // Automatically send to this email
             subject: 'New Custom Vehicle Request',
             html: emailBody // Send formatted HTML email
         };
